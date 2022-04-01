@@ -10,8 +10,9 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #333;
     min-height: 100vh;
+    background-color: #333;
+    transition: 0.5s;
 }
 
 label{
@@ -19,7 +20,7 @@ label{
     width: 75px;
     height: 75px;
     background: #333;
-    border-radius: 10px;
+    border-radius: 16px;
     cursor: pointer;
 }
 
@@ -35,7 +36,7 @@ label span{
     height: 75px;
     background: #333;
     border: 6px solid #212121;
-    border-radius: 14px;
+    border-radius: 16px;
     cursor: pointer;
     transition: 0.5s;
     display: flex;
@@ -43,12 +44,9 @@ label span{
     align-items: center;
 }
 
+
 label input:checked ~ span{
     background: #ffefcd;
-}
-
-label input:checked ~ body{
-    background-color: #ffefcd;
 }
 
 
@@ -64,5 +62,9 @@ label span ion-icon{
     transition: 0.5s;
     color: rgba(255, 255, 255, 1);
     filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff);
+}
 
+label span:hover ion-icon{
+    color: #2dfc52;
+    filter: drop-shadow(0 0 5px #2dfc52) drop-shadow(0 0 10px #2dfc52) drop-shadow(0 0 15px #2dfc52);
 }
