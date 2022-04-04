@@ -197,4 +197,203 @@
 
 
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body" class="body">
+    
+    <div id="bloque" class="bloque">
+
+    <label class="label1">
+        <input id="tema" type="checkbox">
+        <span id="span1" class="span1"><ion-icon id="icono1" name="moon-outline"></ion-icon></span>
+    </label>
+
+    <label class="label2">
+        <input id="lluvia" type="checkbox">
+        <span id="span2" class="span2"><ion-icon id="icono2" name="rainy-outline"></ion-icon></span>
+    </label>
+
+    <label class="label3">
+        <input type="checkbox">
+        <span id="span3" class="span3"><ion-icon id="icono3" name="moon-outline"></ion-icon></span>
+    </label>
+
+    <label class="label4">
+        <input type="checkbox">
+        <span id="span4" class="span4"><ion-icon id="icono4" name="moon-outline"></ion-icon></span>
+    </label>
+
+    <label class="label5">
+        <input type="checkbox">
+        <span id="span5" class="span5"><ion-icon id="icono5" name="moon-outline"></ion-icon></span>
+    </label>
+
+    <label class="label6">
+        <input type="checkbox">
+        <span id="span6" class="span6"><ion-icon id="icono6" name="moon-outline"></ion-icon></span>
+    </label>
+
+    <label class="label7">
+        <input type="checkbox">
+        <span id="span7" class="span7"><ion-icon id="icono7" name="moon-outline"></ion-icon></span>
+    </label>
+
+    <label class="label8">
+        <input type="checkbox">
+        <span id="span8" class="span8"><ion-icon id="icono8" name="moon-outline"></ion-icon></span>
+    </label>
+
+    <label class="label9">
+        <input type="checkbox">
+        <span id="span9" class="span9"><ion-icon id="icono9" name="moon-outline"></ion-icon></span>
+    </label>
+
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    
+    
+
+    <script type="text/javascript">
+
+    function recarga() {
+    document.getElementById("tema").checked = false
+    }
+    window.onload = function() {
+    recarga()
+    };
+
+    var body = document.getElementById("body")
+    var sol = document.getElementById("sol");
+    var tema = document.getElementById("tema");
+    var lluvia = document.getElementById("lluvia");
+    var bloque = document.getElementById("bloque")
+    var span1 = document.getElementById("span1")
+    var span2 = document.getElementById("span2")
+    var span3 = document.getElementById("span3")
+    var span4 = document.getElementById("span4")
+    var span5 = document.getElementById("span5")
+    var span6 = document.getElementById("span6")
+    var span7 = document.getElementById("span7")
+    var span8 = document.getElementById("span8")
+    var span9 = document.getElementById("span9")
+    var icono1 = document.getElementById("icono1")
+    var icono2 = document.getElementById("icono2")
+    var icono3 = document.getElementById("icono3")
+    var icono4 = document.getElementById("icono4")
+    var icono5 = document.getElementById("icono5")
+    var icono6 = document.getElementById("icono6")
+    var icono7 = document.getElementById("icono7")
+    var icono8 = document.getElementById("icono8")
+    var icono9 = document.getElementById("icono9")
+    var i = 
+    
+    document.getElementById("tema").addEventListener("change", function() {
+    if (document.getElementById("tema").checked == true) {
+        body.style.backgroundColor = "#ffefcd"
+        document.getElementById("icono1").name = "sunny-outline";
+        bloque.style.backgroundColor = "#ffd479";
+        span1.style.background = "#ffefcd";
+        span2.style.background = "#ffefcd";
+        span3.style.background = "#ffefcd";
+        span4.style.background = "#ffefcd";
+        span5.style.background = "#ffefcd";
+        span6.style.background = "#ffefcd";
+        span7.style.background = "#ffefcd";
+        span8.style.background = "#ffefcd";
+        span9.style.background = "#ffefcd";
+        i.style.background= "linear-gradient(transparent, blue)";
+     } else {
+        document.documentElement.setAttribute("style", "background-color: #333;", "transition: 0.5s;");
+        body.style.backgroundColor = "#10131c";
+        document.getElementById("icono1").name = "moon-outline";
+        bloque.style.backgroundColor = "#212532";
+        span1.style.background = "#333849";
+        span2.style.background = "#333849";
+        span3.style.background = "#333849";
+        span4.style.background = "#333849";
+        span5.style.background = "#333849";
+        span6.style.background = "#333849";
+        span7.style.background = "#333849";
+        span8.style.background = "#333849";
+        span9.style.background = "#333849";
+    }
+    });
+
+
+    document.getElementById("tema").addEventListener("change", function(){
+        if(document.getElementById("tema").checked == true){
+            icono1.style.color = "#807b71";
+            icono2.style.color = "#807b71";
+            icono3.style.color = "#807b71";
+            icono4.style.color = "#807b71";
+            icono5.style.color = "#807b71";
+            icono6.style.color = "#807b71";
+            icono7.style.color = "#807b71";
+            icono8.style.color = "#807b71";
+            icono9.style.color = "#807b71";
+        }else{
+            icono1.style.color = "rgba(255, 255, 255, 1)";
+            icono2.style.color = "rgba(255, 255, 255, 1)";
+            icono3.style.color = "rgba(255, 255, 255, 1)";
+            icono4.style.color = "rgba(255, 255, 255, 1)";
+            icono5.style.color = "rgba(255, 255, 255, 1)";
+            icono6.style.color = "rgba(255, 255, 255, 1)";
+            icono7.style.color = "rgba(255, 255, 255, 1)";
+            icono8.style.color = "rgba(255, 255, 255, 1)";
+            icono9.style.color = "rgba(255, 255, 255, 1)";
+        }
+    }
+    );
+
+
+
+    document.getElementById("lluvia").addEventListener("change", function() {
+        if (document.getElementById("lluvia").checked == true) {
+            meteor();
+        }else{
+            return[[meteor()]]
+        }
+    }
+    );
+
+    function meteor() {
+        let amount = 250;
+        let body = document.querySelector("body");
+        let count = 0;
+
+        while (count < amount) {
+            let drop = document.createElement("i");
+
+            let size = Math.random() * 5;
+            let posX = Math.floor(Math.random() * window.innerWidth);
+            let delay = Math.random() * -20;
+            let duration = Math.random() * 2;
+
+            drop.style.width = `${0.1 + size}px`;
+            drop.style.left = `${posX}px`;
+            drop.style.animationDelay = `${delay}s`;
+            drop.style.animationDuration = `${0 + duration}s`;
+
+            body.appendChild(drop);
+            count++;
+	    }
+    }
+
+
+
+    </script>
+
+
+</body>
 </html>
