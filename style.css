@@ -3,6 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden
+}
+
+
+i{
+	position: absolute;
+	height:10px;
+	background: linear-gradient(transparent, #d1d1d1);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	animation: raining 0.5s linear Infinite;
+}
+
+@keyframes raining{
+	0% {transform: translateY(-400px);}
+	100% {transform: translateY(calc(100vh + 60px));}
 }
 
 
@@ -16,13 +32,73 @@ body
     transition: 0.5s;
 }
 
-label{
-    position: relative;
-    width: 75px;
-    height: 75px;
-    background: #333;
+
+.bloque {
+    position: absolute;
+    transition: 0.5s;
+    height: 230px;
+    width: 230px;
+    background-color: #212532;
     border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+label{
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 25px;
     cursor: pointer;
+}
+
+.label1{
+    top: 0px;
+    left: 0px;
+}
+
+.label2{
+    top: 0px;
+    left: 70px;
+}
+
+.label3{
+    top: 0px;
+    left: 140px;
+}
+
+.label4{
+    top: 70px;
+    left: 0px;
+}
+
+.label5{
+    top: 70px;
+    left: 70px;
+}
+
+.label6{
+    top: 70px;
+    left: 140px;
+}
+
+.label7{
+    top: 140px;
+    left: 0px;
+}
+
+.label8{
+    top: 140px;
+    left: 70px;
+}
+
+.label9{
+    top: 140px;
+    left: 140px;
 }
 
 label input{
@@ -33,11 +109,10 @@ label span{
     position: absolute;
     top: 0;
     left: 0;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     background: #333849;
-    border: 6px solid #212532;
-    border-radius: 16px;
+    border-radius: 24px;
     cursor: pointer;
     transition: 0.5s;
     display: flex;
@@ -45,30 +120,27 @@ label span{
     align-items: center;
 }
 
+/*
 
-label input:checked ~ span{
-    background: #ffe9bc;
-}
-
-
-label input:checked ~ span ion-icon{
-    color: #807b71;
-}
-
-label input:checked ~ span:hover ion-icon{
+.label1 input:checked ~ span:hover ion-icon{
     color: #e6a212;
     filter: drop-shadow(0 0 5px #e6a212) drop-shadow(0 0 10px #e6a212) drop-shadow(0 0 15px #e6a212);
 
 }
 
+*/
+
 label span ion-icon{
     color: rgba(255, 255, 255, 0, 25);
-    font-size: 2em;
+    font-size: 1.5em;
     transition: 0.5s;
     color: rgba(255, 255, 255, 1);
 }
 
+
+/*
 label span:hover ion-icon{
     color: #2dfc52;
     filter: drop-shadow(0 0 5px #2dfc52) drop-shadow(0 0 10px #2dfc52) drop-shadow(0 0 15px #2dfc52);
 }
+*/
